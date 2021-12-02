@@ -15,7 +15,7 @@ My tools of choice for building this project were:
 JavaScript, using [React](https://reactjs.org/docs/cdn-links.html) and [Bootstrap](https://babeljs.io/en/setup#installation)
 
 ## Functionality and explanations
-1. 9 pads squers with on and off states, which changes by mouse click/keyboard press and the square blinks in yellow.
+1. The machine contains 9 pads squers with on and off states, which changes by mouse click/keyboard press and the square blinks in yellow.
 2. Each square present a loop sample and named by the letters on the keyboard (Q W E A S D Z X C).
 3. When a pad is turned on:
    - The recording starts automatically and displays the current recording list on the screen.
