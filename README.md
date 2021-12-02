@@ -1,3 +1,34 @@
+# My-First-Loop-Machine
+
+
+### I worked on this assignment and wrote everything from scratch!
+
+I had no prior knowledge of this programming language and learned a lot from this project.
+
+## I deployed the game on a server - Click Here
+
+## Summary
+
+I build this Loop Machine using visual studio code [vscode](https://code.visualstudio.com/) with the Live Server extension.
+
+My tools of choice for building this project were: 
+
+JavaScript, using [React](https://reactjs.org/docs/cdn-links.html) and [Bootstrap](https://babeljs.io/en/setup#installation)
+
+## Functionality
+1. 9 pads squers with on and off states, which changes by mouse click/keyboard press and the square blinks in yellow.
+2. Each square present a loop sample and named by the letters on the keyboard (Q W E A S D Z X C).
+3. When a pad is turned on:
+   - The recording starts automatically and displays the current recording list on the screen.
+   - The machine starts playing it's loop on the next loop cycle and repeat the loop as long as the pad is on.
+4. Buttons:
+   - Play-session: plays the recorded session
+   - Clear: clears the recorded list.
+   - Play all & stop: controls of all active loops immediately.
+5. The tempo of the music is determined by the BPM value (120 BPM TOP).
+6. The volume can be changed by using the slide.
+7. Switch between dark and light mode using toggle Switch.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
