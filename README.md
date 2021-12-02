@@ -1,10 +1,11 @@
 # My First Music Loop Machine
 
 ### I worked on this assignment and wrote everything from scratch!
+### I had no prior knowledge of this programming language and learned a lot from this project.
+<br>
 
-I had no prior knowledge of this programming language and learned a lot from this project.
-
-## I deployed the loop machine on a server - Click Here 
+## I deployed the loop machine on a server using Heroku - [Click Here](https://ortal-music-machine.herokuapp.com/)
+Read more about [Heroku](https://www.heroku.com/) 
 
 ## Summary
 I build this Loop Machine using [visual studio code](https://code.visualstudio.com/) with the Live Server extension.
