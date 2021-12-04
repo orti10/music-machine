@@ -1,5 +1,5 @@
 //Array of the letters and there sounds using key code for each letter
-//The letters are the keys that starts the music and stops it
+//The letters are the keys that starts the music and stops it.
 const audioClips = [
     {
       keyCode: 81,
