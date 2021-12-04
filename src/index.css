@@ -9,10 +9,12 @@ body{
 
 .volume{
 	color: black;
+  font-family: 'Sans-serif';
 }
 
 .bpm{
 	color: black;
+  font-family: 'Sans-serif';
 }
 
 label,

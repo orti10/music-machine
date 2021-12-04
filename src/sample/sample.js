@@ -4,55 +4,55 @@ const audioClips = [
     {
       keyCode: 81,
       keyTrigger: 'Q', 
-      id: 'SilentStar',
+      id: 1,
       url: "/sounds/SilentStar_120_Em_OrganSynth.mp3"
     },  
     {
       keyCode: 87,
       keyTrigger: 'W',
-      id: 'PAS3GROOVE1',
+      id: 2,
       url: "/sounds/PAS3GROOVE1.03B.mp3",
     },
     {
       keyCode: 69,
       keyTrigger: 'E',
-      id: 'MazePolitics',
+      id: 3,
       url: "/sounds/MazePolitics_120_Perc.mp3"
     },
     {
       keyCode: 65,
       keyTrigger: 'A',
-      id: 'GrooveB',
+      id: 4,
       url: "/sounds/GrooveB_120bpm_Tanggu.mp3"
     },
     {
       keyCode: 83,
       keyTrigger: 'S',
-      id: 'FUD',
+      id: 5,
       url: "/sounds/FUD_120_StompySlosh.mp3"
     },
     {
       keyCode: 68,
       keyTrigger: 'D',
-      id: 'electricGuitar',
+      id: 6,
       url: "/sounds/electric guitar coutry slide 120bpm - B.mp3"
     },
     {
       keyCode: 90,
       keyTrigger: 'Z',
-      id: "Bass",
+      id: 7,
       url: "/sounds/Bass Warwick heavy funk groove on E 120 BPM.mp3"
     },
     {
       keyCode: 88,
       keyTrigger: 'X',
-      id: 'stutter',
+      id: 8,
       url: "/sounds/120_stutter_breakbeats_16.mp3"
     },
     {
       keyCode: 67,
       keyTrigger: 'C',
-      id: 'funk',
+      id: 9,
       url: "/sounds/120_future_funk_beats_25.mp3"
     }
   ];

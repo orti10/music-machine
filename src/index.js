@@ -101,26 +101,26 @@ function App () {
   </div>
   );
 }
-let v;
+
 //use object distracrture {}
 function Pad({clip, volume, setRecording}) {
+  let v;
   v=volume;
   // set active to know what key was pressed, set to false by default
   const [active, setActive] = React.useState(false);
   React.useEffect(() => {
+      //play clip by the keyboard letters
+    const handleKeyPress = (e) => {
+    if(e.keyCode===clip.keyCode) {
+      volume=v;
+      playSound();
+    }
+}
       document.addEventListener('keydown',handleKeyPress);
       return () => {
           document.removeEventListener('keydown',handleKeyPress);
       }
-  },[]);
-
-  //play clip by the keyboard letters
-  const handleKeyPress = (e) => {
-      if(e.keyCode==clip.keyCode) {
-        volume=v;
-          playSound();
-      }
-  };
+  },);
 
 //The letters are the keys that starts the music and stops it
 const playSound = () => {
@@ -141,6 +141,15 @@ const playSound = () => {
       //stops the sound immediately after clicking
       audioTag.pause();
       setActive(false);
+      // let index = 0;
+      // const interval = setInterval( () => { 
+      //     const audioTag = document.getElementById(audioClips[index].keyTrigger)
+      //     audioTag.currentTime = 0;
+      //     audioTag.volume = volume;
+      //     audioTag.pause();
+      //     index++;
+      // }, 100);
+      // setTimeout(() => clearInterval(interval), 100 * audioClips.length-1); 
   }
 };
 
