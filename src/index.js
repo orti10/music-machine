@@ -141,15 +141,6 @@ const playSound = () => {
       //stops the sound immediately after clicking
       audioTag.pause();
       setActive(false);
-      // let index = 0;
-      // const interval = setInterval( () => { 
-      //     const audioTag = document.getElementById(audioClips[index].keyTrigger)
-      //     audioTag.currentTime = 0;
-      //     audioTag.volume = volume;
-      //     audioTag.pause();
-      //     index++;
-      // }, 100);
-      // setTimeout(() => clearInterval(interval), 100 * audioClips.length-1); 
   }
 };
 
