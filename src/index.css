@@ -3,16 +3,22 @@
   box-sizing: border-box;
 }
 
-body{
-	font-family: Merriweather, serif;
-}
-
 .volume{
 	color: black;
-  font-family: 'Sans-serif';
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .bpm{
 	color: black;
-  font-family: 'Sans-serif';
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-center{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-success, .btn-primary, .btn-warning, .btn-danger{
+  color: white;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

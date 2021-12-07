@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/src/index.css">
@@ -18,25 +17,9 @@
     <title>Loop Machine</title>
 </head>
 <body>
-    
-    <div class="page">
-        <!--Theme switch-->
-        <input type="checkbox" id="themeSwitch" name="theme-switch" class="theme-switch__input" />
-        <label for="themeSwitch" class="theme-switch__label">
-            <span style="font-family: Sans-serif; text-align: center; font-size: 20px">Switch</span>
-        </label>
-        <!--Main page content-->
-        <main>
-            <div class="wrapper">
-                <h2 style="font-family: Sans-serif; text-align: center; font-size: 30px">Welcome to the Loop Machine</h2> 
-                <p style="font-family: Sans-serif; text-align: center; font-size: 15px">© Written By Ortal</p>
-                <h3 style="font-family: Sans-serif; text-align: center; font-size: 25px">Tap a key to start record</h3> 
-            <!-- the html linked with App function in index.js  -->
-            <div id="root"></div>
-            <!-- for that react to work inside here and direct to a separate file -index.js-->
-            <script type="text/babel" src="/src/index.js"></script>
-            </div>
-        </main>
-    </div>   
+    <!-- the html linked with App function in index.js  -->
+    <div id="root"></div>
+    <!-- for that react to work inside here and direct to a separate file -index.js-->
+    <script type="text/babel" src="/src/index.js"></script>
 </body>
 </html>
