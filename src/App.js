@@ -6,7 +6,7 @@ const App = () => {
   //state called volume, recording, and bpm ans sets default values
   const [volume, setVolume] = useState(1);
   const [recording, setRecording] = useState("");
-  const [bpm, setBpm] = useState(120);
+  const [bpm, setBpm] = useState(0.5);
 
   //play the recording by pressed keys
   const playRecording = () => {
@@ -19,9 +19,9 @@ const App = () => {
       audioTag.volume = volume;
       audioTag.play();
       index++;
-    }, 600);
+    }, 600 * bpm);
     //wait and clear the interval (so the music will not play on the background)
-    setTimeout(() => clearInterval(interval), 600 * recordArray.length - 1);
+    setTimeout(() => clearInterval(interval), 600 * bpm * (recordArray.length - 1));
   };
   //plays all the audio clips all at once
   const playAll = () => {
@@ -89,11 +89,11 @@ const App = () => {
               <h4>BPM</h4>
               <input
                 type="range"
-                step="5"
+                step="0.01"
                 onChange={(e) => setBpm(e.target.value)}
                 value={bpm}
-                max="120"
-                min="30"
+                max="1.2"
+                min="0.1"
                 className="w-45"
               />
           </div>
