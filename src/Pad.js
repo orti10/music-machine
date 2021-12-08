@@ -10,6 +10,7 @@ const Pad = ({ clip, volume, setRecording }) => {
     //play clip by the keyboard letters
     const handleKeyPress = (e) => {
       if (e.keyCode === clip.keyCode) {
+        // eslint-disable-next-line
         volume = v;
         playSound();
       }

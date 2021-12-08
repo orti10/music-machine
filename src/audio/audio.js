@@ -56,5 +56,5 @@ const audioClips = [
       url: "/sounds/120_future_funk_beats_25.mp3"
     }
   ];
-
-  export default audioClips;
+ 
+export default audioClips;
