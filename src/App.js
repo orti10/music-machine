@@ -49,7 +49,7 @@ const App = () => {
   };
 
   return (
-    
+
     <div className="page">
       <input type="checkbox" id="themeSwitch" name="theme-switch" className="theme-switch__input" />
       <label htmlFor="themeSwitch" className="theme-switch__label">
