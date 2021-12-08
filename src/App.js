@@ -52,7 +52,7 @@ const App = () => {
   
     <div className="page">
       <input type="checkbox" id="themeSwitch" name="theme-switch" className="theme-switch__input" />
-      <label for="themeSwitch" className="theme-switch__label">
+      <label htmlFor="themeSwitch" className="theme-switch__label">
         <span>Switch</span>
       </label>
       <main>
