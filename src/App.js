@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef} from "react";
 import audioClips from "./audio/audio";
 import Pad from "./Pad";
 
@@ -7,6 +7,7 @@ const App = () => {
   const [volume, setVolume] = useState(1);
   const [recording, setRecording] = useState("");
   const [bpm, setBpm] = useState(0.5);
+  const volumeRef = useRef();
 
   //play the recording by pressed keys
   const playRecording = () => {
@@ -48,6 +49,14 @@ const App = () => {
     setTimeout(() => clearInterval(interval), 50 * audioClips.length - 1);
   };
 
+  const volumeFunc = () => {
+    let audioTag = document.querySelectorAll(".clip");
+    for (let i = 0; i < audioTag.length; i++) {
+      audioTag[i].volume = volumeRef.current.value;
+      setVolume(audioTag[i].volume);
+    }
+  };
+
   return (
 
     <div className="page">
@@ -78,8 +87,8 @@ const App = () => {
                 type="range"
                 step="0.01"
                 //slide can be change (moving slide)
-                onChange={(e) => setVolume(e.target.value)}
-                value={volume}
+                onChange={volumeFunc}
+                ref={volumeRef}
                 max="1"
                 min="0"
                 className="w-45"
